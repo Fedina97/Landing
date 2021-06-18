@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'Whitney';
+  src: url(./Whitney-Semibold.ttf);
+  src: url(./Whitney-Light.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: scale(1.02, 1.06);
+          transform: scale(1.02, 1.06);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h3 {
+  width: 80%;
+  color: #2E2D35;
+}
+
+.header {
+  font-family: 'Whitney';
+  padding-top: 37px;
+  background: -webkit-gradient(linear, left top, right top, from(#2D1686), to(#4E33B5));
+  background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+}
+
+.header .header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-items .header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-items .header-item .clients {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 99px;
+}
+
+.header .header-items .header-item .autorization {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-items .header-item .autorization img {
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.header .header-items .header-item .autorization p {
+  font-size: 18px;
+  font-weight: 325;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.intro {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#2D1686), to(#4E33B5));
+  background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+  font-family: 'Whitney';
+  padding: 95px 0 163px 0;
+}
+
+.intro .intro-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.intro .intro-content .text-content {
+  position: relative;
+  z-index: 1;
+  width: 44%;
+}
+
+.intro .intro-content .text-content .text-content__title {
+  font-size: 50px;
+}
+
+.intro .intro-content .text-content .text-content__text {
+  margin-bottom: 60px;
+  font-size: 24px;
+  font-weight: 350;
+}
+
+.intro .intro-content img {
+  position: absolute;
+  right: 0;
+}
+
+.offer {
+  font-family: 'Segoe UI';
+}
+
+.advantages {
+  font-family: 'Segoe UI';
+}
+
+.advantages .advantages__title {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: 'Whitney';
+  font-weight: 600;
+}
+
+.advantages .advantages-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0;
+}
+
+.advantages .advantages-list .advantages-list__item {
+  padding-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 570px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  background-color: #F6F5F9;
+}
+
+.advantages .advantages-list .advantages-list__item img {
+  padding: 27px 0;
+}
+
+.advantages .advantages-list .advantages-list__item p {
+  line-height: 23px;
+  color: #474351;
+}
+
+.offer {
+  margin-top: 130px;
+  background: url(./img/offer-bg.png) center center/cover no-repeat;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  padding: 70px 0 70px 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.offer h2 {
+  font-size: 34px;
+  font-weight: 600;
+  max-width: 54%;
+  margin-bottom: 46px;
+}
+
+.registration {
+  background-color: #F25B24;
+  color: white;
+  padding: 16px 60px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.modal {
+  background: rgba(28, 24, 47, 0.3);
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.modal .modal-autorization {
+  font-family: 'Whitney';
+  width: 490px;
+  background: white;
+  position: relative;
+}
+
+.modal .modal-autorization .fa-times {
+  color: #918D9A;
+  font-size: 14px;
+  margin: 24px 24px 0 0;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.modal .modal-autorization h2 {
+  text-align: center;
+  margin: 60px 0 35px 0;
+  color: #2E2D35;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.modal .modal-autorization form {
+  width: 390px;
+  margin: 0 auto;
+}
+
+.modal .modal-autorization form input {
+  text-indent: 12px;
+  display: block;
+  width: 100%;
+  padding: 17px 0;
+  margin-top: 10px;
+  color: #918D9A;
+  font-size: 16px;
+}
+
+.modal .modal-autorization form label {
+  display: block;
+  margin-top: 18px;
+  color: #474351;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.modal .modal-autorization form button {
+  background: #F25B24;
+  border-radius: 4px;
+  color: white;
+  width: 100%;
+  padding: 16px 0;
+  margin: 34px 0 55px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

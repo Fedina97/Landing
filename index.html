@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal-autorization">
+            <i class="fas fa-times"></i>
+            <h2>Авторизация</h2>
+            <form action="#">
+                <label for="email-field">E-mail</label>
+                <!-- <br> -->
+                <input type="email" name="email" id="email-field" placeholder="Введите e-mail">
+                <!-- <br> -->
+                <label class="password" for="password-field">Пароль</label>
+                <!-- <br> -->
+                <input type="password" name="password" id="password-field" placeholder="Введите пароль">
+                <!-- <br> -->
+                <button type="button">Войти</button>
+            </form>
+        </div>
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="header-items">
+                <div class="header-item">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header-item">
+                    <a class="clients" href="#">Клиентам</a>
+                    <button class="autorization" type="button">
+                        <img src="./img/account.png" alt="">
+                        <p>Войти</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="intro">
+            <div class="wrapper">
+                <div class="intro-content">
+                    <div class="text-content">
+                        <h1 class="text-content__title">Подбор авто в лизинг по выгодной цене</h1>
+                        <p class="text-content__text">IT платформа по быстрому поиску автомобиля от официальных дилеров
+                            РФ</p>
+                        <button class="registration" type="button">Регистрация</button>
+                    </div>
+                    <img src="./img/Frame109.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="advantages wrapper">
+            <h2 class="advantages__title">Меньше условий - больше возможностей</h2>
+            <ul class="advantages-list">
+                <li class="advantages-list__item">
+                    <div class="advantages__content">
+                        <h3>Экономия времени</h3>
+                        <p>Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на
+                            рекламу
+                            и
+                            маркетинг.</p>
+                    </div>
+                    <img src="./img/Time.svg" alt="">
+                </li>
+                <li class="advantages-list__item">
+                    <div class="advantages__content">
+                        <h3>Никаких задержек</h3>
+                        <p>Вы получаете запросы сразу же после отправки клиентом.</p>
+                    </div>
+                    <img src="./img/Speed.svg" alt="">
+                </li>
+                <li class="advantages-list__item">
+                    <div class="advantages-list__content">
+                        <h3>Максимальная информативность</h3>
+                        <p>В каждой заявке указан регион поиска, марка и модель авто, а так же индивидуальные
+                            запросы
+                            клиента.
+                    </div>
+                    <img src="./img/Information.svg" alt="">
+                    </p>
+                </li>
+                <li class="advantages-list__item">
+                    <div class="advantages-list__content">
+                        <h3>Удобство общения</h3>
+                        <p>Для каждого запроса у вас открыт чат
+                            с клиентом с возможностью отправки документов.</p>
+                    </div>
+                    <img src="./img/Chat.svg" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="offer wrapper">
+            <h2 class="offer__title">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных
+                клиентов</h2>
+            <button class="registration" type="button">Регистрация</button>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

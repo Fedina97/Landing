@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Whitney';
+    src: url(./Whitney-Semibold.ttf);
+    src: url(./Whitney-Light.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.02, 1.06);
+        transition: ease-in-out 0.3s;
+    }
+}
+
+
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h3 {
+    width: 80%;
+    color: #2E2D35;
+}
+
+.header {
+    font-family: 'Whitney';
+    padding-top: 37px;
+    background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+
+    .header-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-item {
+            display: flex;
+            align-items: center;
+
+            .clients {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                margin-right: 99px;
+            }
+
+            .autorization {
+                color: white;
+                display: flex;
+                align-items: center;
+
+
+                img {
+                    margin-right: 12px;
+                    vertical-align: middle;
+                }
+
+                p {
+                    font-size: 18px;
+                    font-weight: 325;
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.intro {
+    color: white;
+    background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+    font-family: 'Whitney';
+    padding: 95px 0 163px 0;
+
+    .intro-content {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .text-content {
+            position: relative;
+            z-index: 1;
+            width: 44%;
+
+            .text-content__title {
+                font-size: 50px;
+            }
+
+            .text-content__text {
+                margin-bottom: 60px;
+                font-size: 24px;
+                font-weight: 350;
+            }
+
+        }
+
+        img {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+
+
+}
+
+.offer {
+    font-family: 'Segoe UI';
+
+}
+
+.advantages {
+    font-family: 'Segoe UI';
+
+    .advantages__title {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 40px;
+        font-family: 'Whitney';
+        font-weight: 600;
+    }
+
+    .advantages-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0;
+
+        .advantages-list__item {
+            padding-left: 40px;
+            box-sizing: border-box;
+            max-width: 570px;
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            background-color: #F6F5F9;
+
+            img {
+                padding: 27px 0;
+            }
+
+            p {
+                line-height: 23px;
+                color: #474351;
+            }
+        }
+    }
+}
+
+.offer {
+    margin-top: 130px;
+    background: url(./img/offer-bg.png) center center/cover no-repeat;
+    border-radius: 10px;
+    // height: 371px;
+    width: 100%;
+    color: white;
+    padding: 70px 0 70px 70px;
+    box-sizing: border-box;
+
+    h2 {
+        font-size: 34px;
+        font-weight: 600;
+        max-width: 54%;
+        margin-bottom: 46px;
+    }
+
+    // button {
+    //     margin-bottom: 70px;
+    // }
+}
+
+
+.registration {
+    background-color: #F25B24;
+    color: white;
+    padding: 16px 60px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.modal {
+    background: rgba(28, 24, 47, 0.3);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+
+    .modal-autorization {
+        font-family: 'Whitney';
+        width: 490px;
+        background: white;
+        position: relative;
+
+        .fa-times {
+            color: #918D9A;
+            font-size: 14px;
+            margin: 24px 24px 0 0;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 60px 0 35px 0;
+            color: #2E2D35;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        form {
+            width: 390px;
+            margin: 0 auto;
+
+            input {
+                text-indent: 12px;
+                display: block;
+                width: 100%;
+                padding: 17px 0;
+                margin-top: 10px;
+                color: #918D9A;
+                font-size: 16px;
+            }
+
+            label {
+                display: block;
+                margin-top: 18px;
+                color: #474351;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            button {
+                background: #F25B24;
+                border-radius: 4px;
+                color: white;
+                width: 100%;
+                padding: 16px 0;
+                margin: 34px 0 55px 0;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+}
